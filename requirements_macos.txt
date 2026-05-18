@@ -1,0 +1,14 @@
+datasets==4.0.0
+diffusers @ git+https://github.com/huggingface/diffusers.git@ba0e732eb059b9eb3afe4b643be471d93154d1cc
+einops==0.8.1
+gradio==6.11.0
+lightning==2.5.3
+opencv-python==4.10.0.84
+potracer==0.0.4
+safetensors==0.7.0
+scikit-image==0.24.0
+scikit-learn==1.6.1
+svgpathtools==1.7.1
+tensorboard==2.20.0
+transformers==4.53.1
+vtracer==0.6.11

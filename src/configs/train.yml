@@ -1,0 +1,44 @@
+logger:
+  save_dir: "/mnt/localssd/lightning_logs"
+  name: "depth_pro"
+data:
+  batch_size: 1
+  num_workers: 8
+  train_idx_files: "src/data/MMSVG_train.npy"
+  squash_consecutive_same_color: True
+  val_min_files: 100000
+  val_max_files: 100100
+  input_size: 1536
+  raster_resolution: 1536
+  train_transform:
+    torchvision.transforms.ColorJitter:
+      brightness: 0.2
+      contrast: 0.2
+      saturation: 0.2
+      hue: 0.2
+    torchvision.transforms.RandomInvert:
+      p: 0.3
+    torchvision.transforms.GaussianBlur:
+      kernel_size: 11
+      sigma: [.01, 2]
+
+training: 
+  # load_from_checkpoint: "./lightning_logs/cnn_decoder/version_1/checkpoints/epoch=2-step=27000.ckpt"
+  ndevices: 8
+  load_from_checkpoint: False
+  max_epochs: 40
+  gradient_clip_val: 1.0
+  lr: 
+    encoder: 1.0e-6
+    decoder: 5.0e-6
+    head: 5.0e-6
+    scheduler:
+        target: transformers.get_cosine_schedule_with_warmup
+        kwargs:
+          num_warmup_steps: 100
+          num_training_steps: 192440
+  loss_dict:
+    src.train.loss.loss_inverse_median: 
+      weight: 1.0
+  val_check_interval: 1000
+  log_every_n_steps: 10
