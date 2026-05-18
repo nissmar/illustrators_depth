@@ -13,6 +13,7 @@ lightning_logs/**
 *.ply
 *.npy
 *.html
+*.obj
 OmniSVG___mmsvg-illustration/**
 *.lock
 
