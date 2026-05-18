@@ -51,6 +51,18 @@ pip install -r requirements_macos.txt
 conda install -c conda-forge cairo
 ```
 
+## Model Download 
+
+The model's weights are accessible [here](https://drive.google.com/file/d/12BRCnHIQutSThfJhhHn_sYOBxFeq-NB3/view?usp=share_link)
+
+```shell
+mkdir checkpoints
+cd checkpoints
+gdown 12BRCnHIQutSThfJhhHn_sYOBxFeq-NB3
+unzip mmsvg_model.zip
+cd ..
+```
+
 ## 🚀 Quickstart
 
 For an easy quickstart, use our provided gradio demo:
