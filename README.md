@@ -31,7 +31,7 @@ Below are the setup instructions for Linux and macOS environments.
 Create and activate the Conda environment, then install Depth Pro (tested with CUDA 12.4):
 
 ```shell
-conda create --name argos python=3.9 ipython -y
+conda create --name argos python=3.11 ipython -y
 conda activate argos
 pip install -r requirements.txt 
 cd ml-depth-pro
@@ -62,6 +62,7 @@ mkdir checkpoints
 cd checkpoints
 gdown 12BRCnHIQutSThfJhhHn_sYOBxFeq-NB3
 unzip mmsvg_model.zip
+rm mmsvg_model.zip 
 cd ..
 ```
 
