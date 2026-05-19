@@ -1,4 +1,4 @@
-# Illustrator’s Depth: Monocular Layer Index Prediction for Image Decomposition
+# [CVPR 2026] Illustrator’s Depth: Monocular Layer Index Prediction for Image Decomposition
 
 [Nissim Maruani](https://nissmar.github.io)<sup>1,2</sup>, [Peiying Zhang](https://scholar.google.com/citations?user=rlCwTlIAAAAJ&hl=en)<sup>3</sup>, [Siddhartha Chaudhuri](https://sidch.com)<sup>4</sup>,
 [Matthew Fisher](https://techmatt.github.io)<sup>4</sup>, [Nanxuan Zhao](https://www.nxzhao.com)<sup>4</sup>, [Vladimir G. Kim](https://vovakim.com)<sup>4</sup>, [Pierre Alliez](https://team.inria.fr/titane/pierre-alliez/)<sup>1,2</sup>, [Mathieu Desbrun](https://pages.saclay.inria.fr/mathieu.desbrun/)<sup>1,5</sup>. [Wang Yifan](https://yifita.netlify.app)<sup>4</sup>
@@ -9,6 +9,8 @@
 <div align="center">
   <img src="data/teaser.svg" alt="Illustrator's Depth Summary" width="80%">
 </div>
+
+Paper & more available [here](https://nissmar.github.io/projects/illustrators_depth/).
 
 ## News
 - 05/26 📟 Code & model released 
