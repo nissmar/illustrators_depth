@@ -24,7 +24,11 @@ We introduce Illustrator’s Depth, a novel definition of depth that addresses a
 
 ## Installation
 
-Below are the setup instructions for Linux and macOS environments.
+Below are the setup instructions for Linux and macOS environments. Start by cloning this repo:
+
+```shell
+git clone --recursive https://github.com/nissmar/illustrators_depth.git
+```
 
 ### Linux 
 
