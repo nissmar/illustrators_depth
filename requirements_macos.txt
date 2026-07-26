@@ -3,6 +3,7 @@ diffusers @ git+https://github.com/huggingface/diffusers.git@ba0e732eb059b9eb3af
 einops==0.8.1
 gradio==6.11.0
 lightning==2.5.3
+matplotlib==3.10
 opencv-python==4.10.0.84
 potracer==0.0.4
 safetensors==0.7.0
