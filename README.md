@@ -62,6 +62,7 @@ conda install -c conda-forge cairo
 The model's weights are accessible [here](https://drive.google.com/file/d/12BRCnHIQutSThfJhhHn_sYOBxFeq-NB3/view?usp=share_link). Please download them using:
 
 ```shell
+pip install gdown
 mkdir checkpoints
 cd checkpoints
 gdown 12BRCnHIQutSThfJhhHn_sYOBxFeq-NB3
